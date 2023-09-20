@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> color </h1>
+    <canvas id="myCanvas" width="300" height="200" style="border:10px solid;"> ></canvas>
+    <form>
+        <label for="favcolor"> select your favourite color</label><br>
+        <input type="color" id="color"><br><br>
+
+        <input type="submit" id="submit">
+        <script>    
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.moveTo(0,0);
+        ctx.lineTo(300,200);
+        ctx.stroke();
+        </script>
+        
+    </form>
+</body>
+</html>11\
